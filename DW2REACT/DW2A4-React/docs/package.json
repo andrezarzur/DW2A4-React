@@ -1,14 +1,13 @@
 {
-  "homepage": "https://andrezarzur.github.io/DW2A4-React/",
   "name": "ProjetoReact",
   "version": "1.0.0",
   "main": "index.jsx",
   "license": "MIT",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "cross-env NODE_ENV=development webpack server",
-    "build": "cross-env NODE_ENV=development webpack"
+    "build": "cross-env NODE_ENV=development webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "node-sass": "^6.0.1",
